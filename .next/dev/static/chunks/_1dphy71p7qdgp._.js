@@ -814,6 +814,7 @@ function FaqSection() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: `grid h-[34px] w-[34px] place-items-center rounded-full border text-[17px] font-light transition-all max-sm:h-[30px] max-sm:w-[30px] ${isOpen ? "rotate-45 border-[#242320] bg-[#242320] text-white" : "border-[#c9c5bb]"}`,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "flex h-full w-full items-center justify-center leading-none",
                                             "aria-hidden": "true",
                                             children: "+"
                                         }, void 0, false, {

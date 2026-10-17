@@ -82,7 +82,7 @@ export function FaqSection() {
                 {question}
               </span>
               <span className={`grid h-[34px] w-[34px] place-items-center rounded-full border text-[17px] font-light transition-all max-sm:h-[30px] max-sm:w-[30px] ${isOpen ? "rotate-45 border-[#242320] bg-[#242320] text-white" : "border-[#c9c5bb]"}`}>
-                <span aria-hidden="true">+</span>
+                <span className="flex h-full w-full items-center justify-center leading-none" aria-hidden="true">+</span>
               </span>
             </button>
             <div
