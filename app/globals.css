@@ -12,3 +12,26 @@
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
 }
+
+html {
+  scrollbar-color: #9a958a #eeece6;
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #eeece6;
+}
+
+html::-webkit-scrollbar-thumb {
+  border: 2px solid #eeece6;
+  border-radius: 999px;
+  background: #9a958a;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #6f6b62;
+}

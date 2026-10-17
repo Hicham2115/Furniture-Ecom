@@ -19,7 +19,7 @@ export function CategorySection() {
   return (
     <section
       data-scroll-reveal
-      className="grid min-h-[810px] grid-cols-[.88fr_1.12fr] items-center gap-[9.4%] bg-[#fbf9f8] px-[4.35%] pb-[78px] pt-[54px] max-md:min-h-0 max-md:grid-cols-1 max-md:gap-9 max-md:px-[6%] max-md:pb-[65px] max-md:pt-[55px]"
+      className="grid min-h-[810px] grid-cols-[.88fr_1.12fr] items-center gap-[9.4%] bg-[#eeece6] px-[4.35%] pb-[78px] pt-[54px] max-md:min-h-0 max-md:grid-cols-1 max-md:gap-9 max-md:px-[6%] max-md:pb-[65px] max-md:pt-[55px]"
       id="collections"
       aria-label="Shop by room"
     >

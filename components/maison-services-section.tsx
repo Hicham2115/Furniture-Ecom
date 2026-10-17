@@ -12,7 +12,7 @@ export function MaisonServicesSection() {
     <>
       <section
         data-scroll-reveal
-        className="grid min-h-[760px] grid-cols-[1.08fr_.92fr] items-center gap-[9%] bg-[#e8e5df] px-[9.9%] py-[92px] max-md:min-h-0 max-md:grid-cols-1 max-md:gap-10 max-md:px-[6%] max-md:py-[65px]"
+        className="grid min-h-[760px] grid-cols-[1.08fr_.92fr] items-center gap-[9%] bg-[#eeece6] px-[9.9%] py-[92px] max-md:min-h-0 max-md:grid-cols-1 max-md:gap-10 max-md:px-[6%] max-md:py-[65px]"
         id="materials"
       >
         <figure className="group relative m-0 h-[min(57vw,724px)] min-h-[470px] overflow-hidden bg-[#d5d1c7] [clip-path:polygon(0_0,100%_0,100%_88%,88%_100%,0_100%)] max-md:h-[min(105vw,560px)] max-md:min-h-0">

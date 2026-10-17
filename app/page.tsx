@@ -19,7 +19,7 @@ export default function Home() {
       <main className="w-full overflow-hidden">
         <Hero />
         <div
-          className="flex h-14 items-center overflow-hidden bg-sand"
+          className="flex h-14 items-center overflow-hidden bg-[#eeece6]"
           aria-label="Our commitments"
         >
           <div

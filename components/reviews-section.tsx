@@ -40,22 +40,22 @@ export function ReviewsSection() {
   return (
     <section
       data-scroll-reveal
-      className="relative overflow-hidden bg-[#242320] px-[9.8%] py-[108px] text-[#f8f7f4] max-md:px-[7%] max-md:py-[76px]"
+      className="relative overflow-hidden bg-[#eeece6] px-[9.8%] py-[108px] text-[#242320] max-md:px-[7%] max-md:py-[76px]"
       aria-label="Customer reviews"
     >
-      <div className="pointer-events-none absolute -right-4 top-[-100px] select-none font-serif text-[clamp(250px,39vw,570px)] leading-none text-white/[.025]">
+      <div className="pointer-events-none absolute -right-4 top-[-100px] select-none font-serif text-[clamp(250px,39vw,570px)] leading-none text-[#242320]/[.035]">
         “
       </div>
       <div className="relative grid grid-cols-[.7fr_1.3fr] gap-[10%] max-md:grid-cols-1 max-md:gap-12">
         <div className="flex flex-col justify-between">
           <div>
-            <p className="m-0 text-[10px] font-semibold uppercase tracking-[.2em] text-[#c6b995]">
+            <p className="m-0 text-[10px] font-semibold uppercase tracking-[.2em] text-[#8a7854]">
               WORDS FROM HOME
             </p>
             <h2 className="mb-0 mt-7 max-w-[340px] text-[clamp(47px,6vw,82px)] font-normal leading-[.9] tracking-[-.08em]">
               Loved in
               <br />
-              <em className="font-serif text-[#c6c0b1]">real life.</em>
+              <em className="font-serif text-[#89867d]">real life.</em>
             </h2>
           </div>
           <div className="mt-14 max-md:mt-0">
@@ -67,18 +67,18 @@ export function ReviewsSection() {
                 ))}
               </span>
             </div>
-            <p className="mb-0 mt-3 text-[9px] uppercase tracking-[.15em] text-white/55">
+            <p className="mb-0 mt-3 text-[9px] uppercase tracking-[.15em] text-[#77746c]">
               AVERAGE FROM 49 CUSTOMER REVIEWS
             </p>
           </div>
         </div>
 
-        <div className="relative flex min-h-[360px] flex-col justify-between border-l border-white/15 pl-[8%] max-md:min-h-0 max-md:border-l-0 max-md:border-t max-md:pl-0 max-md:pt-9">
+        <div className="relative flex min-h-[360px] flex-col justify-between border-l border-[#242320]/15 pl-[8%] max-md:min-h-0 max-md:border-l-0 max-md:border-t max-md:pl-0 max-md:pt-9">
           <div>
-            <span className="font-serif text-[46px] leading-none text-[#c6b995]">“</span>
+            <span className="font-serif text-[46px] leading-none text-[#8a7854]">“</span>
             <blockquote
               key={activeReview}
-              className="mb-0 mt-3 max-w-[820px] font-serif text-[clamp(28px,3.7vw,52px)] leading-[1.15] tracking-[-.035em] text-[#f2f0eb]"
+              className="mb-0 mt-3 max-w-[820px] font-serif text-[clamp(28px,3.7vw,52px)] leading-[1.15] tracking-[-.035em] text-[#302e2a]"
             >
               {review.quote}
             </blockquote>
@@ -86,25 +86,25 @@ export function ReviewsSection() {
 
           <div className="mt-10 flex items-end justify-between gap-6 max-sm:flex-col max-sm:items-start">
             <div className="flex items-center gap-4">
-              <span className="grid h-12 w-12 place-items-center rounded-full border border-white/25 font-serif text-[13px] text-[#d9bf7d]">
+              <span className="grid h-12 w-12 place-items-center rounded-full border border-[#242320]/25 font-serif text-[13px] text-[#8a7854]">
                 {review.initials}
               </span>
               <div>
                 <p className="mb-1 mt-0 text-[12px] font-medium uppercase tracking-[.11em]">
                   {review.name}
                 </p>
-                <p className="m-0 text-[10px] text-white/55">
+                <p className="m-0 text-[10px] text-[#77746c]">
                   {review.location} <span className="px-1.5">·</span> {review.product}
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-5">
-              <span className="text-[10px] tracking-[.13em] text-white/55">
+              <span className="text-[10px] tracking-[.13em] text-[#77746c]">
                 0{activeReview + 1} <span className="px-1">/</span> 0{reviews.length}
               </span>
               <button
-                className="grid h-11 w-11 place-items-center rounded-full border border-white/30 transition-colors hover:border-[#d9bf7d] hover:bg-[#d9bf7d] hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9bf7d]"
+                className="grid h-11 w-11 place-items-center rounded-full border border-[#242320]/30 transition-colors hover:border-[#d9bf7d] hover:bg-[#d9bf7d] hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9bf7d]"
                 type="button"
                 onClick={() => goToReview(-1)}
                 aria-label="Previous review"
@@ -112,7 +112,7 @@ export function ReviewsSection() {
                 <ArrowLeft size={16} strokeWidth={1.5} />
               </button>
               <button
-                className="grid h-11 w-11 place-items-center rounded-full border border-white/30 transition-colors hover:border-[#d9bf7d] hover:bg-[#d9bf7d] hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9bf7d]"
+                className="grid h-11 w-11 place-items-center rounded-full border border-[#242320]/30 transition-colors hover:border-[#d9bf7d] hover:bg-[#d9bf7d] hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9bf7d]"
                 type="button"
                 onClick={() => goToReview(1)}
                 aria-label="Next review"

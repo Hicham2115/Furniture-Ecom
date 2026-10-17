@@ -21,7 +21,7 @@ export function EditorialCollectionSection() {
     : products.filter((product) => product.category === category);
 
   return (
-    <section data-scroll-reveal className="bg-paper px-[4.4%] pb-24 pt-[82px] max-md:px-[5%] max-md:pb-[70px] max-md:pt-[58px]" id="selection">
+    <section data-scroll-reveal className="bg-[#fbf9f8] px-[4.4%] pb-24 pt-[82px] max-md:px-[5%] max-md:pb-[70px] max-md:pt-[58px]" id="selection">
       <div className="mb-[94px] flex items-end justify-between gap-8 max-md:mb-12 max-md:items-start">
         <div>
           <p className="mb-4 mt-0 text-[9px] font-semibold uppercase tracking-[.18em] text-[#77746c]">MAISON · SIGNATURE COLLECTION</p>

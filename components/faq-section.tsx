@@ -1,4 +1,7 @@
+"use client";
+
 import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 
 const questions = [
   {
@@ -28,10 +31,12 @@ const questions = [
 ];
 
 export function FaqSection() {
+  const [openQuestion, setOpenQuestion] = useState<string | null>(null);
+
   return (
     <section
       data-scroll-reveal
-      className="grid grid-cols-[.78fr_1.22fr] gap-[9%] bg-[#f2f0eb] px-[9.8%] py-[112px] max-md:grid-cols-1 max-md:gap-10 max-md:px-[7%] max-md:py-[76px]"
+      className="grid grid-cols-[.78fr_1.22fr] gap-[9%] bg-[#fbf9f8] px-[9.8%] py-[112px] max-md:grid-cols-1 max-md:gap-10 max-md:px-[7%] max-md:py-[76px]"
       aria-labelledby="faq-title"
     >
       <div className="flex flex-col items-start">
@@ -58,24 +63,42 @@ export function FaqSection() {
       </div>
 
       <div className="border-t border-[#d3d0c8]">
-        {questions.map(({ number, question, answer }) => (
-          <details className="group border-b border-[#d3d0c8]" key={number}>
-            <summary className="grid min-h-[91px] cursor-pointer list-none grid-cols-[42px_1fr_40px] items-center gap-3 [&::-webkit-details-marker]:hidden max-sm:min-h-[78px] max-sm:grid-cols-[32px_1fr_34px]">
+        {questions.map(({ number, question, answer }) => {
+          const isOpen = openQuestion === number;
+
+          return (
+          <div className="group border-b border-[#d3d0c8]" key={number}>
+            <button
+              className="grid min-h-[91px] w-full cursor-pointer grid-cols-[42px_1fr_40px] items-center gap-3 text-left max-sm:min-h-[78px] max-sm:grid-cols-[32px_1fr_34px]"
+              type="button"
+              aria-expanded={isOpen}
+              aria-controls={`faq-answer-${number}`}
+              onClick={() => setOpenQuestion(isOpen ? null : number)}
+            >
               <span className="self-start pt-[33px] text-[9px] tracking-[.1em] text-[#9b978c] max-sm:pt-[29px]">
                 {number}
               </span>
               <span className="py-5 text-[clamp(15px,1.5vw,19px)] font-medium tracking-[-.025em] transition-colors group-hover:text-[#8a7854] max-sm:text-[14px]">
                 {question}
               </span>
-              <span className="grid h-[34px] w-[34px] place-items-center rounded-full border border-[#c9c5bb] text-[17px] font-light transition-all group-open:rotate-45 group-open:border-[#242320] group-open:bg-[#242320] group-open:text-white max-sm:h-[30px] max-sm:w-[30px]">
-                +
+              <span className={`grid h-[34px] w-[34px] place-items-center rounded-full border text-[17px] font-light transition-all max-sm:h-[30px] max-sm:w-[30px] ${isOpen ? "rotate-45 border-[#242320] bg-[#242320] text-white" : "border-[#c9c5bb]"}`}>
+                <span aria-hidden="true">+</span>
               </span>
-              <p className="col-start-2 mb-0 max-w-[520px] pb-7 pr-5 text-[12px] leading-[1.8] text-[#747168] max-sm:pb-6 max-sm:text-[11px]">
-                {answer}
-              </p>
-            </summary>
-          </details>
-        ))}
+            </button>
+            <div
+              className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+              id={`faq-answer-${number}`}
+              aria-hidden={!isOpen}
+            >
+              <div className="overflow-hidden">
+                <p className="mb-0 max-w-[520px] pb-7 pl-[54px] pr-5 text-[12px] leading-[1.8] text-[#747168] max-sm:pb-6 max-sm:pl-[45px] max-sm:text-[11px]">
+                  {answer}
+                </p>
+              </div>
+            </div>
+          </div>
+          );
+        })}
       </div>
     </section>
   );
