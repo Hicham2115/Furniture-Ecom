@@ -5,6 +5,7 @@ import { useEffect } from "react";
 export function MotionDirector() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    document.documentElement.classList.add("motion-ready");
 
     const heroItems = document.querySelectorAll<HTMLElement>("[data-hero-motion]");
     heroItems.forEach((item, index) => {
@@ -54,23 +55,43 @@ export function MotionDirector() {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           const element = entry.target as HTMLElement;
+          element.dataset.revealVisible = "true";
           element.animate(
             [
-              { opacity: 0, translate: "0 28px" },
+              { opacity: 0, translate: "0 18px" },
               { opacity: 1, translate: "0 0" },
             ],
-            { duration: 900, easing: "cubic-bezier(0.22, 1, 0.36, 1)", fill: "both" },
+            { duration: 620, easing: "cubic-bezier(0.22, 1, 0.36, 1)", fill: "both" },
           );
+          const targets = Array.from(element.children).filter(
+            (child): child is HTMLElement => child instanceof HTMLElement,
+          );
+
+          (targets.length ? targets : [element]).forEach((target, index) => {
+            target.animate(
+              [
+                { opacity: 0, translate: "0 24px", filter: "blur(3px)" },
+                { opacity: 1, translate: "0 0", filter: "blur(0)" },
+              ],
+              {
+                duration: 760,
+                delay: Math.min(index * 110, 330),
+                easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+                fill: "both",
+              },
+            );
+          });
           activeObserver.unobserve(element);
         });
       },
-      { threshold: 0.14 },
+      { threshold: 0.08, rootMargin: "0px 0px -5% 0px" },
     );
 
     sections.forEach((section) => observer.observe(section));
     window.addEventListener("scroll", updateParallax, { passive: true });
     updateParallax();
     return () => {
+      document.documentElement.classList.remove("motion-ready");
       observer.disconnect();
       window.removeEventListener("scroll", updateParallax);
       cancelAnimationFrame(scrollFrame);

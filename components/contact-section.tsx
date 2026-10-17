@@ -5,7 +5,7 @@ export function ContactSection() {
   return (
     <section
       data-scroll-reveal
-      className="relative overflow-hidden bg-[#fbf9f8] px-6 py-[120px] text-center max-md:py-[88px]"
+      className="relative overflow-hidden bg-[#fbf9f8] px-6 py-[82px] text-center max-md:py-[64px]"
       id="newsletter"
     >
       <span className="pointer-events-none absolute -left-10 top-[-110px] font-serif text-[clamp(250px,38vw,540px)] leading-none text-[#242320]/[.035]">
@@ -20,12 +20,12 @@ export function ContactSection() {
           <br />
           <em className="font-serif text-[#89867d]">well received.</em>
         </h2>
-        <p className="mx-auto mb-9 mt-0 max-w-[400px] text-[13px] leading-[1.8] text-[#6e6b63]">
+        <p className="mx-auto mb-6 mt-0 max-w-[400px] text-[13px] leading-[1.8] text-[#6e6b63]">
           New pieces, thoughtful spaces, and small notes for making home feel
           more like you. Only now and then.
         </p>
         <NewsletterForm />
-        <div className="mt-[76px] flex items-center justify-center gap-3 text-[9px] font-medium uppercase tracking-[.16em] text-[#8d897f] max-md:mt-14">
+        <div className="mt-10 flex items-center justify-center gap-3 text-[9px] font-medium uppercase tracking-[.16em] text-[#8d897f] max-md:mt-8">
           <span>Made for the moments that matter</span>
           <ArrowDownRight size={14} strokeWidth={1.4} />
           <span>Since 2026</span>

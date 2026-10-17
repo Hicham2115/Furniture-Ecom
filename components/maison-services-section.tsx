@@ -57,6 +57,7 @@ export function MaisonServicesSection() {
       </section>
 
       <section
+        data-scroll-reveal
         className="grid grid-cols-3 gap-[8%] bg-[#fbf9f8] px-[9%] py-[82px] max-md:grid-cols-1 max-md:gap-[27px] max-md:px-[7%] max-md:py-[58px]"
         aria-label="The MAISON experience"
       >

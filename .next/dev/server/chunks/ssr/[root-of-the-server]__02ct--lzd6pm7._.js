@@ -262,7 +262,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$newsletter$2d$
 function ContactSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         "data-scroll-reveal": true,
-        className: "relative overflow-hidden bg-[#fbf9f8] px-6 py-[120px] text-center max-md:py-[88px]",
+        className: "relative overflow-hidden bg-[#fbf9f8] px-6 py-[82px] text-center max-md:py-[64px]",
         id: "newsletter",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -308,7 +308,7 @@ function ContactSection() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mx-auto mb-9 mt-0 max-w-[400px] text-[13px] leading-[1.8] text-[#6e6b63]",
+                        className: "mx-auto mb-6 mt-0 max-w-[400px] text-[13px] leading-[1.8] text-[#6e6b63]",
                         children: "New pieces, thoughtful spaces, and small notes for making home feel more like you. Only now and then."
                     }, void 0, false, {
                         fileName: "[project]/components/contact-section.tsx",
@@ -321,7 +321,7 @@ function ContactSection() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-[76px] flex items-center justify-center gap-3 text-[9px] font-medium uppercase tracking-[.16em] text-[#8d897f] max-md:mt-14",
+                        className: "mt-10 flex items-center justify-center gap-3 text-[9px] font-medium uppercase tracking-[.16em] text-[#8d897f] max-md:mt-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "Made for the moments that matter"
@@ -1229,6 +1229,7 @@ function MaisonServicesSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                "data-scroll-reveal": true,
                 className: "grid grid-cols-3 gap-[8%] bg-[#fbf9f8] px-[9%] py-[82px] max-md:grid-cols-1 max-md:gap-[27px] max-md:px-[7%] max-md:py-[58px]",
                 "aria-label": "The MAISON experience",
                 children: services.map(([number, title, copy])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -1242,7 +1243,7 @@ function MaisonServicesSection() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/maison-services-section.tsx",
-                                lineNumber: 68,
+                                lineNumber: 69,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1250,7 +1251,7 @@ function MaisonServicesSection() {
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/components/maison-services-section.tsx",
-                                lineNumber: 71,
+                                lineNumber: 72,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1258,13 +1259,13 @@ function MaisonServicesSection() {
                                 children: copy
                             }, void 0, false, {
                                 fileName: "[project]/components/maison-services-section.tsx",
-                                lineNumber: 74,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, number, true, {
                         fileName: "[project]/components/maison-services-section.tsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
@@ -1340,7 +1341,8 @@ const products = [
         detail: "Tissu bouclé · Écru",
         price: 12900,
         category: "Canapés",
-        image: "photo-1555041469-a586c61ea9bc"
+        image: "photo-1555041469-a586c61ea9bc",
+        description: "A generous, softly sculpted sofa designed for slow mornings and long evenings. Its textured boucle upholstery and relaxed proportions bring an easy warmth to the living room."
     },
     {
         id: "matelas-serein",
@@ -1348,7 +1350,8 @@ const products = [
         detail: "Ressorts ensachés · 160 × 200",
         price: 500,
         category: "Matelas",
-        image: "photo-1631679706909-1844bbd07221"
+        image: "photo-1631679706909-1844bbd07221",
+        description: "A calm, supportive foundation for better rest. Individually wrapped springs adapt to your movement, while the breathable finish keeps the bed feeling fresh through the night."
     },
     {
         id: "fauteuil-ligne",
@@ -1356,7 +1359,8 @@ const products = [
         detail: "Chêne massif · Laine naturelle",
         price: 4850,
         category: "Fauteuils",
-        image: "photo-1567538096630-e0c55bd6374c"
+        image: "photo-1567538096630-e0c55bd6374c",
+        description: "A considered balance of solid oak and natural wool. Ligne brings a quiet architectural presence to a reading corner, bedroom, or the space beside your favorite window."
     }
 ];
 function photo(id, width = 1200) {

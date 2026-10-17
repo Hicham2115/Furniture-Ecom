@@ -41,7 +41,7 @@ export function EditorialCollectionSection() {
           {selection.map((product, index) => (
             <article className={`group min-w-0 ${index === 1 ? "md:mt-[68px]" : ""}`} key={product.id}>
               <div className={`relative aspect-[.76] overflow-hidden bg-[#dedbd2] ${imageShapes[index % imageShapes.length]}`}>
-                <a className="absolute inset-0 block" href="/products" aria-label={`Discover ${product.name}`}>
+                <a className="absolute inset-0 block" href={`/products/${product.id}`} aria-label={`Discover ${product.name}`}>
                   <img className="h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0" src={photo(product.image, 1200)} alt={product.name} loading="lazy" />
                 </a>
                 <button onClick={() => toggleFavorite(product.id)} className={`absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-paper/90 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100 focus-visible:opacity-100 max-md:opacity-100 ${favorites.includes(product.id) ? "text-[#9c5545]" : "text-ink"}`} aria-label={favorites.includes(product.id) ? "Remove from wishlist" : "Add to wishlist"}>
@@ -54,7 +54,7 @@ export function EditorialCollectionSection() {
               <div className="flex justify-between gap-3 pt-5 max-sm:flex-col">
                 <div>
                   <p className="mb-2 mt-0 text-[8px] font-medium uppercase tracking-[.15em] text-[#8b8881]">{product.category}</p>
-                  <h3 className="mb-1 mt-0 text-[15px] font-medium tracking-[-.025em]">{product.name}</h3>
+                  <h3 className="mb-1 mt-0 text-[15px] font-medium tracking-[-.025em]"><a className="transition-colors hover:text-[#8a7854]" href={`/products/${product.id}`}>{product.name}</a></h3>
                   <p className="m-0 text-[10px] text-[#8b8881]">{product.detail}</p>
                 </div>
                 <strong className="whitespace-nowrap pt-5 text-[11px] font-medium max-sm:pt-0">{money(product.price)}</strong>

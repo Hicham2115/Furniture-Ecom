@@ -480,7 +480,7 @@ function EditorialCollectionSection() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         className: "absolute inset-0 block",
-                                        href: "/products",
+                                        href: `/products/${product.id}`,
                                         "aria-label": `Discover ${product.name}`,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                             className: "h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0",
@@ -557,7 +557,15 @@ function EditorialCollectionSection() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "mb-1 mt-0 text-[15px] font-medium tracking-[-.025em]",
-                                                children: product.name
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    className: "transition-colors hover:text-[#8a7854]",
+                                                    href: `/products/${product.id}`,
+                                                    children: product.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/editorial-collection-section.tsx",
+                                                    lineNumber: 57,
+                                                    columnNumber: 88
+                                                }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/editorial-collection-section.tsx",
                                                 lineNumber: 57,

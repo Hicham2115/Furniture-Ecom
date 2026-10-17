@@ -1,0 +1,114 @@
+module.exports = [
+(()=>{"use strict";return[
+"[project]/app/icon.svg.mjs { IMAGE => \"[project]/app/icon.svg (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$icon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/app/icon.svg (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$icon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 64,
+    height: 64
+};
+}),
+"[project]/app/products/[slug]/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ProductRoute
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$api$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next/dist/api/navigation.react-server.js [app-rsc] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/components/navigation.react-server.js [app-rsc] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/components/product-detail-page'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/furniture-products.ts [app-rsc] (ecmascript)");
+;
+;
+;
+;
+async function ProductRoute({ params }) {
+    const { slug } = await params;
+    const product = __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["products"].find((item)=>item.id === slug);
+    if (!product) (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(ProductDetailPage, {
+        product: product
+    }, void 0, false, {
+        fileName: "[project]/app/products/[slug]/page.tsx",
+        lineNumber: 15,
+        columnNumber: 10
+    }, this);
+}
+}),
+"[project]/data/furniture-products.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "money",
+    ()=>money,
+    "photo",
+    ()=>photo,
+    "products",
+    ()=>products
+]);
+const products = [
+    {
+        id: "canape-nuage",
+        name: "Canapé Nuage",
+        detail: "Tissu bouclé · Écru",
+        price: 12900,
+        category: "Canapés",
+        image: "photo-1555041469-a586c61ea9bc",
+        description: "A generous, softly sculpted sofa designed for slow mornings and long evenings. Its textured boucle upholstery and relaxed proportions bring an easy warmth to the living room."
+    },
+    {
+        id: "matelas-serein",
+        name: "Matelas Serein",
+        detail: "Ressorts ensachés · 160 × 200",
+        price: 500,
+        category: "Matelas",
+        image: "photo-1631679706909-1844bbd07221",
+        description: "A calm, supportive foundation for better rest. Individually wrapped springs adapt to your movement, while the breathable finish keeps the bed feeling fresh through the night."
+    },
+    {
+        id: "fauteuil-ligne",
+        name: "Fauteuil Ligne",
+        detail: "Chêne massif · Laine naturelle",
+        price: 4850,
+        category: "Fauteuils",
+        image: "photo-1567538096630-e0c55bd6374c",
+        description: "A considered balance of solid oak and natural wool. Ligne brings a quiet architectural presence to a reading corner, bedroom, or the space beside your favorite window."
+    }
+];
+function photo(id, width = 1200) {
+    return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
+}
+function money(amount) {
+    return new Intl.NumberFormat("fr-MA").format(amount) + " DH";
+}
+}),
+]})(),
+"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+var mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+
+module.exports = mod;
+}),
+"[project]/app/icon.svg (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/icon.37g06b38vf_58.svg" + (globalThis["NEXT_CLIENT_ASSET_SUFFIX"] || ''));}),
+"[project]/app/products/[slug]/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", (function(__turbopack_context__){
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/app/products/[slug]/page.tsx [app-rsc] (ecmascript)"));
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__1_iawvkh5pin7._.js.map

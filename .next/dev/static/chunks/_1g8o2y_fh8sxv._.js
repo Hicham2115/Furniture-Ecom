@@ -687,6 +687,7 @@ function MotionDirector() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "MotionDirector.useEffect": ()=>{
             if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+            document.documentElement.classList.add("motion-ready");
             const heroItems = document.querySelectorAll("[data-hero-motion]");
             heroItems.forEach({
                 "MotionDirector.useEffect": (item, index)=>{
@@ -760,26 +761,54 @@ function MotionDirector() {
                         "MotionDirector.useEffect": (entry)=>{
                             if (!entry.isIntersecting) return;
                             const element = entry.target;
+                            element.dataset.revealVisible = "true";
                             element.animate([
                                 {
                                     opacity: 0,
-                                    translate: "0 28px"
+                                    translate: "0 18px"
                                 },
                                 {
                                     opacity: 1,
                                     translate: "0 0"
                                 }
                             ], {
-                                duration: 900,
+                                duration: 620,
                                 easing: "cubic-bezier(0.22, 1, 0.36, 1)",
                                 fill: "both"
                             });
+                            const targets = Array.from(element.children).filter({
+                                "MotionDirector.useEffect.targets": (child)=>child instanceof HTMLElement
+                            }["MotionDirector.useEffect.targets"]);
+                            (targets.length ? targets : [
+                                element
+                            ]).forEach({
+                                "MotionDirector.useEffect": (target, index)=>{
+                                    target.animate([
+                                        {
+                                            opacity: 0,
+                                            translate: "0 24px",
+                                            filter: "blur(3px)"
+                                        },
+                                        {
+                                            opacity: 1,
+                                            translate: "0 0",
+                                            filter: "blur(0)"
+                                        }
+                                    ], {
+                                        duration: 760,
+                                        delay: Math.min(index * 110, 330),
+                                        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+                                        fill: "both"
+                                    });
+                                }
+                            }["MotionDirector.useEffect"]);
                             activeObserver.unobserve(element);
                         }
                     }["MotionDirector.useEffect"]);
                 }
             }["MotionDirector.useEffect"], {
-                threshold: 0.14
+                threshold: 0.08,
+                rootMargin: "0px 0px -5% 0px"
             });
             sections.forEach({
                 "MotionDirector.useEffect": (section)=>observer.observe(section)
@@ -790,6 +819,7 @@ function MotionDirector() {
             updateParallax();
             return ({
                 "MotionDirector.useEffect": ()=>{
+                    document.documentElement.classList.remove("motion-ready");
                     observer.disconnect();
                     window.removeEventListener("scroll", updateParallax);
                     cancelAnimationFrame(scrollFrame);
@@ -825,7 +855,8 @@ const products = [
         detail: "Tissu bouclé · Écru",
         price: 12900,
         category: "Canapés",
-        image: "photo-1555041469-a586c61ea9bc"
+        image: "photo-1555041469-a586c61ea9bc",
+        description: "A generous, softly sculpted sofa designed for slow mornings and long evenings. Its textured boucle upholstery and relaxed proportions bring an easy warmth to the living room."
     },
     {
         id: "matelas-serein",
@@ -833,7 +864,8 @@ const products = [
         detail: "Ressorts ensachés · 160 × 200",
         price: 500,
         category: "Matelas",
-        image: "photo-1631679706909-1844bbd07221"
+        image: "photo-1631679706909-1844bbd07221",
+        description: "A calm, supportive foundation for better rest. Individually wrapped springs adapt to your movement, while the breathable finish keeps the bed feeling fresh through the night."
     },
     {
         id: "fauteuil-ligne",
@@ -841,7 +873,8 @@ const products = [
         detail: "Chêne massif · Laine naturelle",
         price: 4850,
         category: "Fauteuils",
-        image: "photo-1567538096630-e0c55bd6374c"
+        image: "photo-1567538096630-e0c55bd6374c",
+        description: "A considered balance of solid oak and natural wool. Ligne brings a quiet architectural presence to a reading corner, bedroom, or the space beside your favorite window."
     }
 ];
 function photo(id, width = 1200) {
