@@ -501,39 +501,77 @@ function ProductsPage() {
                 className: "min-h-[65vh]",
                 id: "top",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-[8%] pb-5 pt-[70px] max-md:px-[6%] max-md:pt-[52px]",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                        className: "relative flex min-h-[300px] items-end justify-between gap-12 overflow-hidden bg-[#171715] px-[8%] pb-[42px] pt-[60px] text-[#f3f1ec] max-md:min-h-0 max-md:flex-col max-md:items-start max-md:gap-9 max-md:px-[6%] max-md:pb-10 max-md:pt-[52px]",
+                        "aria-labelledby": "collection-title",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "m-0 text-[9px] font-semibold uppercase tracking-[.18em]",
-                                children: "MAISON — THE COLLECTION"
-                            }, void 0, false, {
-                                fileName: "[project]/components/products-page.tsx",
-                                lineNumber: 6,
-                                columnNumber: 134
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "mb-0 mt-5 text-[clamp(50px,8vw,94px)] font-normal leading-[.9] tracking-[-.08em]",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative z-10",
                                 children: [
-                                    "Pieces for",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mb-0 mt-0 flex items-center gap-3 text-[9px] font-semibold uppercase tracking-[.2em] text-[#c8c4ba]",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "h-px w-7 bg-[#9c8e72]",
+                                                "aria-hidden": "true"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/products-page.tsx",
+                                                lineNumber: 6,
+                                                columnNumber: 505
+                                            }, this),
+                                            "MAISON — THE COLLECTION"
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/products-page.tsx",
                                         lineNumber: 6,
-                                        columnNumber: 339
+                                        columnNumber: 390
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
-                                        className: "font-serif text-[#8b887f]",
-                                        children: "living well."
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        id: "collection-title",
+                                        className: "mb-0 mt-6 text-[clamp(54px,8vw,104px)] font-normal leading-[.86] tracking-[-.085em]",
+                                        children: [
+                                            "Pieces for",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                fileName: "[project]/components/products-page.tsx",
+                                                lineNumber: 6,
+                                                columnNumber: 725
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                                                className: "font-serif text-[#a8a49b]",
+                                                children: "living well."
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/products-page.tsx",
+                                                lineNumber: 6,
+                                                columnNumber: 731
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/products-page.tsx",
                                         lineNumber: 6,
-                                        columnNumber: 345
+                                        columnNumber: 593
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/products-page.tsx",
                                 lineNumber: 6,
-                                columnNumber: 232
+                                columnNumber: 359
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "relative z-10 mb-1 max-w-[215px] border-l border-[#625d52] pl-5 text-[12px] leading-[1.8] text-[#b8b3a8] max-md:max-w-[260px]",
+                                children: "Thoughtful furniture for the moments that make a home."
+                            }, void 0, false, {
+                                fileName: "[project]/components/products-page.tsx",
+                                lineNumber: 6,
+                                columnNumber: 801
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "pointer-events-none absolute -right-10 -top-28 select-none font-serif text-[460px] leading-none text-white/[.025] max-md:-right-7 max-md:-top-9 max-md:text-[250px]",
+                                "aria-hidden": "true",
+                                children: "M"
+                            }, void 0, false, {
+                                fileName: "[project]/components/products-page.tsx",
+                                lineNumber: 6,
+                                columnNumber: 1000
                             }, this)
                         ]
                     }, void 0, true, {
@@ -546,7 +584,7 @@ function ProductsPage() {
                     }, void 0, false, {
                         fileName: "[project]/components/products-page.tsx",
                         lineNumber: 6,
-                        columnNumber: 415
+                        columnNumber: 1219
                     }, this)
                 ]
             }, void 0, true, {
@@ -557,7 +595,7 @@ function ProductsPage() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                 fileName: "[project]/components/products-page.tsx",
                 lineNumber: 6,
-                columnNumber: 458
+                columnNumber: 1262
             }, this)
         ]
     }, void 0, true, {

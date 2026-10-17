@@ -42,8 +42,9 @@ export function FeaturedFurnitureSection({ showAll = false, favoritesOnly = fals
   }, [category, favorites, favoritesOnly, priceRange, showAll, sortOrder]);
 
   return (
-    <section data-scroll-reveal className="px-[5.3%] py-24 max-md:px-[5%] max-md:py-[69px]" id="selection">
-      <div className="flex items-center justify-between border-b border-line pb-[18px]"><p className="m-0 text-[9px] font-semibold uppercase tracking-[.18em]">{favoritesOnly ? "YOUR FAVORITES" : showAll ? "THE COLLECTION" : <>MAISON EDIT — 2026</>}</p><div className="flex items-center gap-3"><span className="text-[10px] text-muted">{selection.length} pieces</span><div className="flex gap-2"><button className="grid h-[34px] w-[34px] place-items-center rounded-full border border-line transition-colors hover:bg-butter" aria-label="Previous products"><ArrowLeft size={17} /></button><button className="grid h-[34px] w-[34px] place-items-center rounded-full border border-line transition-colors hover:bg-butter" aria-label="Next products"><ArrowRight size={17} /></button></div></div></div>
+    <section data-scroll-reveal className={showAll ? "" : "px-[5.3%] py-24 max-md:px-[5%] max-md:py-[69px]"} id="selection">
+      <div className={`flex items-center justify-between border-b pb-[18px] ${showAll ? "bg-[#171715] px-[5.3%] pt-10 border-[#45433e] text-[#f3f1ec] max-md:px-[5%]" : "border-line"}`}><p className="m-0 text-[9px] font-semibold uppercase tracking-[.18em]">{favoritesOnly ? "YOUR FAVORITES" : showAll ? "THE COLLECTION" : <>MAISON EDIT — 2026</>}</p><div className="flex items-center gap-3"><span className={showAll ? "text-[10px] text-[#a8a49b]" : "text-[10px] text-muted"}>{selection.length} pieces</span><div className="flex gap-2"><button className={`grid h-[34px] w-[34px] place-items-center rounded-full border transition-colors ${showAll ? "border-[#45433e] hover:bg-[#302f2b]" : "border-line hover:bg-butter"}`} aria-label="Previous products"><ArrowLeft size={17} /></button><button className={`grid h-[34px] w-[34px] place-items-center rounded-full border transition-colors ${showAll ? "border-[#45433e] hover:bg-[#302f2b]" : "border-line hover:bg-butter"}`} aria-label="Next products"><ArrowRight size={17} /></button></div></div></div>
+      <div className={showAll ? "bg-paper px-[5.3%] pb-24 pt-8 max-md:px-[5%] max-md:pb-[69px]" : ""}>
       {showAll && <div className="mb-8 border-b border-line py-5">
         <div className="flex flex-wrap items-center justify-between gap-5">
           <div className="flex items-center gap-2 text-[9px] font-semibold uppercase tracking-[.13em] text-[#77746c]"><SlidersHorizontal size={14} /> Filter by</div>
@@ -79,6 +80,7 @@ export function FeaturedFurnitureSection({ showAll = false, favoritesOnly = fals
         <div className="flex justify-between gap-2 pt-4 max-sm:flex-col"><div><p className="mb-2 mt-0 text-[8px] uppercase tracking-[.13em] text-[#8b8881]">{product.category === "Canapés" ? "Sofas" : product.category === "Tapis" ? "Rugs" : product.category === "Matelas" ? "Mattresses" : "Armchairs"}</p><h3 className="mb-1 mt-0 text-sm font-medium tracking-[-.02em]"><a className="transition-colors hover:text-[#8a7854]" href={`/products/${product.id}`}>{product.name}</a></h3><p className="m-0 text-[10px] text-[#8b8881]">{product.detail}</p></div><strong className="whitespace-nowrap text-[11px] font-semibold max-sm:mt-1">{money(product.price)}</strong></div>
       </article>)}</div>}
       {!showAll && !favoritesOnly && <a className="mt-7 hidden w-fit items-center gap-3 border-b border-[#a8a59c] py-2 text-[9px] font-semibold uppercase tracking-[.1em] max-md:inline-flex" href="/products">Toute la collection <ArrowUpRight size={15} /></a>}
+      </div>
     </section>
   );
 }
