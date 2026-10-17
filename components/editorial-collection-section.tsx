@@ -37,9 +37,9 @@ export function EditorialCollectionSection() {
       {selection.length === 0 ? (
         <p className="py-20 text-center text-sm text-muted">No pieces in this collection yet.</p>
       ) : (
-        <div className="grid grid-cols-1 items-start gap-x-[3.3%] gap-y-10 md:grid-cols-3">
+        <div className="grid grid-cols-1 items-start gap-x-[3.3%] gap-y-10 md:grid-cols-4">
           {selection.map((product, index) => (
-            <article className={`group min-w-0 ${index === 1 ? "md:mt-[68px]" : ""}`} key={product.id}>
+            <article className="group min-w-0" key={product.id}>
               <div className={`relative aspect-[.76] overflow-hidden bg-[#dedbd2] ${imageShapes[index % imageShapes.length]}`}>
                 <a className="absolute inset-0 block" href={`/products/${product.id}`} aria-label={`Discover ${product.name}`}>
                   <img className="h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0" src={photo(product.image, 1200)} alt={product.name} loading="lazy" />

@@ -1291,6 +1291,10 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .grid-cols-\[\.7fr_1\.3fr\] {
     grid-template-columns: .7fr 1.3fr;
   }
@@ -4410,6 +4414,10 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
+    .md\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
     .md\:gap-10 {
       gap: calc(var(--spacing) * 10);
     }
@@ -4418,6 +4426,10 @@
   @media (min-width: 64rem) {
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .lg\:px-12 {

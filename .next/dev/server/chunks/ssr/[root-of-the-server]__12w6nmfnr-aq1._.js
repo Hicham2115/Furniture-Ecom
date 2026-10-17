@@ -742,6 +742,8 @@ function MotionDirector() {
 "use strict";
 
 __turbopack_context__.s([
+    "armchairImage",
+    ()=>armchairImage,
     "money",
     ()=>money,
     "photo",
@@ -755,6 +757,7 @@ __turbopack_context__.s([
 ]);
 const rugImage = "photo-1595595183083-d40937b04cf3";
 const sofaImage = "photo-1760611656185-57a618917619";
+const armchairImage = "photo-1770316320132-e082373dd3f6";
 const products = [
     {
         id: "canape-nuage",
@@ -789,7 +792,7 @@ const products = [
         detail: "Chêne massif · Laine naturelle",
         price: 4850,
         category: "Fauteuils",
-        image: "photo-1567538096630-e0c55bd6374c",
+        image: armchairImage,
         description: "A considered balance of solid oak and natural wool. Ligne brings a quiet architectural presence to a reading corner, bedroom, or the space beside your favorite window."
     }
 ];

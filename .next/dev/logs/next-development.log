@@ -95,3 +95,15 @@
 {"timestamp":"02:56:05.663","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: sofaImage is not defined\\u001b[39m\\n\\u001b[31m    at module evaluation (components/category-section.tsx:10:60)\\n    at Home (app/page.tsx:39:9)\\u001b[39m\\n  \\u001b[90m 8 |\\u001b[0m   { name: \\u001b[32m\\\"Living Room\\\"\\u001b[0m, count: \\u001b[35m174\\u001b[0m, filter: \\u001b[32m\\\"Tout voir\\\"\\u001b[0m, image: rugImage },\\n  \\u001b[90m 9 |\\u001b[0m   { name: \\u001b[32m\\\"Bedroom\\\"\\u001b[0m, count: \\u001b[35m361\\u001b[0m, filter: \\u001b[32m\\\"Matelas\\\"\\u001b[0m, image: \\u001b[32m\\\"photo-1631679706909-1844bbd07221\\\"\\u001b[0m },\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m10 |\\u001b[0m   { name: \\u001b[32m\\\"Kitchen\\\"\\u001b[0m, count: \\u001b[35m117\\u001b[0m, filter: \\u001b[32m\\\"Canapés\\\"\\u001b[0m, image: sofaImage },\\n  \\u001b[90m   |\\u001b[0m                                                           \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m11 |\\u001b[0m   { name: \\u001b[32m\\\"Office\\\"\\u001b[0m, count: \\u001b[35m92\\u001b[0m, filter: \\u001b[32m\\\"Fauteuils\\\"\\u001b[0m, image: \\u001b[32m\\\"photo-1497366754035-f200968a6e72\\\"\\u001b[0m },\\n  \\u001b[90m12 |\\u001b[0m ];\\n  \\u001b[90m13 |\\u001b[0m\""}
 {"timestamp":"02:56:36.798","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
 {"timestamp":"02:56:36.992","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"03:12:20.065","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"03:21:56.548","source":"Server","level":"LOG","message":"✓ Compiled in 26ms"}
+{"timestamp":"03:22:21.210","source":"Server","level":"LOG","message":"✓ Compiled in 53ms"}
+{"timestamp":"03:22:28.906","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"03:23:12.935","source":"Server","level":"LOG","message":"✓ Compiled in 57ms"}
+{"timestamp":"03:23:14.802","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"03:23:23.612","source":"Server","level":"LOG","message":"✓ Compiled in 43ms"}
+{"timestamp":"03:23:25.444","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"03:23:32.527","source":"Server","level":"LOG","message":"✓ Compiled in 25ms"}
+{"timestamp":"03:23:34.257","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"03:23:51.873","source":"Server","level":"LOG","message":"✓ Compiled in 29ms"}
+{"timestamp":"03:24:07.792","source":"Server","level":"LOG","message":"✓ Compiled in 21ms"}
