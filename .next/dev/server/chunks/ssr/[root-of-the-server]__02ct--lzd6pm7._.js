@@ -886,8 +886,8 @@ function Hero() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                         className: "h-full w-full object-cover object-center transition-transform duration-1000 ease-out group-hover:scale-[1.035]",
-                        src: (0, __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["photo"])("photo-1684165610413-2401399e0e59", 1600),
-                        alt: "Sculptural luxury armchair in a calm interior"
+                        src: (0, __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["photo"])(__TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["sofaImage"], 1600),
+                        alt: "Sofa in a sunlit living room with a patterned rug"
                     }, void 0, false, {
                         fileName: "[project]/components/hero.tsx",
                         lineNumber: 11,
@@ -1332,8 +1332,14 @@ __turbopack_context__.s([
     "photo",
     ()=>photo,
     "products",
-    ()=>products
+    ()=>products,
+    "rugImage",
+    ()=>rugImage,
+    "sofaImage",
+    ()=>sofaImage
 ]);
+const rugImage = "photo-1595595183083-d40937b04cf3";
+const sofaImage = "photo-1760611656185-57a618917619";
 const products = [
     {
         id: "canape-nuage",
@@ -1341,7 +1347,7 @@ const products = [
         detail: "Tissu bouclé · Écru",
         price: 12900,
         category: "Canapés",
-        image: "photo-1555041469-a586c61ea9bc",
+        image: sofaImage,
         description: "A generous, softly sculpted sofa designed for slow mornings and long evenings. Its textured boucle upholstery and relaxed proportions bring an easy warmth to the living room."
     },
     {
@@ -1352,6 +1358,15 @@ const products = [
         category: "Matelas",
         image: "photo-1631679706909-1844bbd07221",
         description: "A calm, supportive foundation for better rest. Individually wrapped springs adapt to your movement, while the breathable finish keeps the bed feeling fresh through the night."
+    },
+    {
+        id: "tapis-berbere",
+        name: "Tapis Berbère",
+        detail: "Laine tissée · Écru",
+        price: 3200,
+        category: "Tapis",
+        image: rugImage,
+        description: "A handwoven wool rug with a soft natural texture, bringing warmth and a grounded feel to the living room."
     },
     {
         id: "fauteuil-ligne",

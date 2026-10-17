@@ -1,13 +1,13 @@
 "use client";
 
 import { useCommerceStore } from "@/lib/commerce-store";
-import { photo } from "@/data/furniture-products";
+import { photo, rugImage, sofaImage } from "@/data/furniture-products";
 import { useState } from "react";
 
 const categories = [
-  { name: "Living Room", count: 174, filter: "Tout voir", image: "photo-1616486338812-3dadae4b4ace" },
+  { name: "Living Room", count: 174, filter: "Tout voir", image: rugImage },
   { name: "Bedroom", count: 361, filter: "Matelas", image: "photo-1631679706909-1844bbd07221" },
-  { name: "Kitchen", count: 117, filter: "Canapés", image: "photo-1600210492486-724fe5c67fb0" },
+  { name: "Sofas", count: 117, filter: "Canapés", image: sofaImage },
   { name: "Office", count: 92, filter: "Fauteuils", image: "photo-1497366754035-f200968a6e72" },
 ];
 

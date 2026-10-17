@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowUpRight, Plus } from "lucide-react";
-import { photo } from "@/data/furniture-products";
+import { photo, sofaImage } from "@/data/furniture-products";
 
 export function Hero() {
   return (
@@ -8,7 +8,7 @@ export function Hero() {
       <div data-hero-motion data-hero-parallax="0.025" className="absolute left-[4.2%] top-[8%] z-0 w-max whitespace-nowrap text-[clamp(140px,17vw,320px)] font-semibold leading-[.8] tracking-[-.085em] text-[#eceae9] max-md:left-[2%] max-md:text-[clamp(90px,17vw,150px)]" aria-hidden="true">LIVE BEAUTIFULLY</div>
       <div data-hero-motion data-hero-parallax="0.018" className="absolute bottom-[7%] left-[4.2%] z-0 w-max whitespace-nowrap text-[clamp(140px,17vw,320px)] font-semibold leading-[.8] tracking-[-.085em] text-[#eceae9] max-md:bottom-[13%] max-md:left-[2%] max-md:text-[clamp(90px,17vw,150px)]" aria-hidden="true">MAISON · 2026</div>
       <div data-hero-motion data-hero-image data-hero-parallax="0.04" className="group absolute left-1/2 top-[43%] z-10 aspect-square w-[min(33vw,680px)] -translate-x-1/2 -translate-y-1/2 overflow-hidden bg-[#dedbd2] shadow-[0_26px_80px_rgba(36,35,31,0.12)] ring-1 ring-ink/5 [clip-path:polygon(10%_0,100%_0,100%_88%,90%_100%,0_100%,0_12%)] max-md:top-[31%] max-md:w-[min(82vw,500px)]">
-        <img className="h-full w-full object-cover object-center transition-transform duration-1000 ease-out group-hover:scale-[1.035]" src={photo("photo-1684165610413-2401399e0e59", 1600)} alt="Sculptural luxury armchair in a calm interior" />
+        <img className="h-full w-full object-cover object-center transition-transform duration-1000 ease-out group-hover:scale-[1.035]" src={photo(sofaImage, 1600)} alt="Sofa in a sunlit living room with a patterned rug" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/20 via-transparent to-ink/5" />
         <span className="absolute bottom-4 left-4 text-[9px] font-medium tracking-[.12em] text-white drop-shadow-sm max-md:bottom-3 max-md:left-3">NEW COLLECTION · 2026</span>
       </div>

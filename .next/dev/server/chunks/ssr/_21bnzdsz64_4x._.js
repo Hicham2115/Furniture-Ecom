@@ -20,7 +20,7 @@ const categories = [
         name: "Living Room",
         count: 174,
         filter: "Tout voir",
-        image: "photo-1616486338812-3dadae4b4ace"
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rugImage"]
     },
     {
         name: "Bedroom",
@@ -29,10 +29,10 @@ const categories = [
         image: "photo-1631679706909-1844bbd07221"
     },
     {
-        name: "Kitchen",
+        name: "Sofas",
         count: 117,
         filter: "Canapés",
-        image: "photo-1600210492486-724fe5c67fb0"
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sofaImage"]
     },
     {
         name: "Office",

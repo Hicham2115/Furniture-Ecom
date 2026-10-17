@@ -772,7 +772,7 @@ function ProductDetailPage({ product }) {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "mb-4 mt-0 text-[9px] font-semibold uppercase tracking-[.18em] text-[#8a7854]",
                                         children: [
-                                            product.category === "Canapés" ? "Living room" : product.category === "Matelas" ? "Bedroom" : "Lounge",
+                                            product.category === "Canapés" || product.category === "Tapis" ? "Living room" : product.category === "Matelas" ? "Bedroom" : "Lounge",
                                             " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "px-2 text-[#aaa69a]",
@@ -780,7 +780,7 @@ function ProductDetailPage({ product }) {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/product-detail-page.tsx",
                                                 lineNumber: 67,
-                                                columnNumber: 120
+                                                columnNumber: 152
                                             }, this),
                                             " Made for living"
                                         ]
@@ -1125,7 +1125,7 @@ function ProductDetailPage({ product }) {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "absolute left-4 top-4 bg-[#fbf9f8]/95 px-3 py-2 text-[8px] font-medium uppercase tracking-[.14em] text-[#55524f]",
-                                                        children: item.category === "Canapés" ? "Living room" : item.category === "Matelas" ? "Bedroom" : "Lounge"
+                                                        children: item.category === "Canapés" || item.category === "Tapis" ? "Living room" : item.category === "Matelas" ? "Bedroom" : "Lounge"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/product-detail-page.tsx",
                                                         lineNumber: 119,

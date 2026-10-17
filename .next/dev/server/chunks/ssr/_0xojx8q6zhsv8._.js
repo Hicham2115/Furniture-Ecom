@@ -219,6 +219,10 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
             value: "Canapés"
         },
         {
+            label: "Rugs",
+            value: "Tapis"
+        },
+        {
             label: "Mattresses",
             value: "Matelas"
         },
@@ -263,12 +267,12 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                             children: "MAISON EDIT — 2026"
                         }, void 0, false, {
                             fileName: "[project]/components/featured-furniture-section.tsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 225
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/featured-furniture-section.tsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 89
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -282,7 +286,7 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                lineNumber: 45,
+                                lineNumber: 46,
                                 columnNumber: 294
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -295,12 +299,12 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                             size: 17
                                         }, void 0, false, {
                                             fileName: "[project]/components/featured-furniture-section.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 46,
                                             columnNumber: 554
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 46,
                                         columnNumber: 395
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -310,30 +314,30 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                             size: 17
                                         }, void 0, false, {
                                             fileName: "[project]/components/featured-furniture-section.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 46,
                                             columnNumber: 741
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 46,
                                         columnNumber: 586
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                lineNumber: 45,
+                                lineNumber: 46,
                                 columnNumber: 367
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/featured-furniture-section.tsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 253
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/featured-furniture-section.tsx",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 7
             }, this),
             showAll && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -348,14 +352,14 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                     size: 14
                                 }, void 0, false, {
                                     fileName: "[project]/components/featured-furniture-section.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 49,
                                     columnNumber: 119
                                 }, this),
                                 " Filter by"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/featured-furniture-section.tsx",
-                            lineNumber: 48,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -368,12 +372,12 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                     children: option.label
                                 }, option.value, false, {
                                     fileName: "[project]/components/featured-furniture-section.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 51,
                                     columnNumber: 46
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/featured-furniture-section.tsx",
-                            lineNumber: 49,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$custom$2d$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CustomSelect"], {
@@ -400,7 +404,7 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                             ]
                         }, void 0, false, {
                             fileName: "[project]/components/featured-furniture-section.tsx",
-                            lineNumber: 52,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$custom$2d$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CustomSelect"], {
@@ -427,18 +431,18 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                             ]
                         }, void 0, false, {
                             fileName: "[project]/components/featured-furniture-section.tsx",
-                            lineNumber: 63,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/featured-furniture-section.tsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/featured-furniture-section.tsx",
-                lineNumber: 46,
+                lineNumber: 47,
                 columnNumber: 19
             }, this),
             selection.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -448,7 +452,7 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                         children: favoritesOnly ? "You haven’t saved any pieces yet." : "No pieces match these filters."
                     }, void 0, false, {
                         fileName: "[project]/components/featured-furniture-section.tsx",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 147
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -460,13 +464,13 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                         children: "Clear filters"
                     }, void 0, false, {
                         fileName: "[project]/components/featured-furniture-section.tsx",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 242
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/featured-furniture-section.tsx",
-                lineNumber: 76,
+                lineNumber: 77,
                 columnNumber: 33
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 gap-x-5 gap-y-8 pt-7 sm:grid-cols-2 lg:grid-cols-3",
@@ -486,12 +490,12 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                             loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "[project]/components/featured-furniture-section.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 78,
                                             columnNumber: 149
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 78,
                                         columnNumber: 77
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -499,7 +503,7 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                         children: index === 0 ? "SIGNATURE PIECE" : "NEW ARRIVAL"
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 78,
                                         columnNumber: 326
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -512,12 +516,12 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                             fill: favorites.includes(product.id) ? "currentColor" : "none"
                                         }, void 0, false, {
                                             fileName: "[project]/components/featured-furniture-section.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 78,
                                             columnNumber: 796
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 78,
                                         columnNumber: 471
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -531,20 +535,20 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                                 size: 17
                                             }, void 0, false, {
                                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 78,
                                                 columnNumber: 1242
                                             }, this),
                                             " Add to bag"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 78,
                                         columnNumber: 906
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                lineNumber: 77,
+                                lineNumber: 78,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -554,10 +558,10 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mb-2 mt-0 text-[8px] uppercase tracking-[.13em] text-[#8b8881]",
-                                                children: product.category === "Canapés" ? "Sofas" : product.category === "Matelas" ? "Mattresses" : "Armchairs"
+                                                children: product.category === "Canapés" ? "Sofas" : product.category === "Tapis" ? "Rugs" : product.category === "Matelas" ? "Mattresses" : "Armchairs"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                                lineNumber: 78,
+                                                lineNumber: 79,
                                                 columnNumber: 79
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -568,26 +572,26 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                                     children: product.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/featured-furniture-section.tsx",
-                                                    lineNumber: 78,
-                                                    columnNumber: 329
+                                                    lineNumber: 79,
+                                                    columnNumber: 369
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                                lineNumber: 78,
-                                                columnNumber: 265
+                                                lineNumber: 79,
+                                                columnNumber: 305
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "m-0 text-[10px] text-[#8b8881]",
                                                 children: product.detail
                                             }, void 0, false, {
                                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                                lineNumber: 78,
-                                                columnNumber: 439
+                                                lineNumber: 79,
+                                                columnNumber: 479
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 79,
                                         columnNumber: 74
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -595,24 +599,24 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["money"])(product.price)
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
-                                        lineNumber: 78,
-                                        columnNumber: 511
+                                        lineNumber: 79,
+                                        columnNumber: 551
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/featured-furniture-section.tsx",
-                                lineNumber: 78,
+                                lineNumber: 79,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, product.id, true, {
                         fileName: "[project]/components/featured-furniture-section.tsx",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 591
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/featured-furniture-section.tsx",
-                lineNumber: 76,
+                lineNumber: 77,
                 columnNumber: 471
             }, this),
             !showAll && !favoritesOnly && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -624,19 +628,19 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                         size: 15
                     }, void 0, false, {
                         fileName: "[project]/components/featured-furniture-section.tsx",
-                        lineNumber: 80,
+                        lineNumber: 81,
                         columnNumber: 228
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/featured-furniture-section.tsx",
-                lineNumber: 80,
+                lineNumber: 81,
                 columnNumber: 38
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/featured-furniture-section.tsx",
-        lineNumber: 44,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }
