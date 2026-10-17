@@ -484,7 +484,7 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                         href: `/products/${product.id}`,
                                         "aria-label": `View ${product.name}`,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            className: "h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]",
+                                            className: "h-full w-full object-cover grayscale transition-transform duration-700 group-hover:scale-[1.035] group-hover:grayscale-0",
                                             src: (0, __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["photo"])(product.image, 1000),
                                             alt: product.name,
                                             loading: "lazy"
@@ -504,7 +504,7 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
                                         lineNumber: 78,
-                                        columnNumber: 326
+                                        columnNumber: 360
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>toggleFavorite(product.id),
@@ -517,12 +517,12 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                         }, void 0, false, {
                                             fileName: "[project]/components/featured-furniture-section.tsx",
                                             lineNumber: 78,
-                                            columnNumber: 796
+                                            columnNumber: 830
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
                                         lineNumber: 78,
-                                        columnNumber: 471
+                                        columnNumber: 505
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "absolute inset-x-3 bottom-3 flex min-h-11 translate-y-20 items-center justify-center gap-2 bg-paper/95 text-[9px] font-semibold uppercase tracking-[.1em] transition-transform group-hover:translate-y-0 focus-visible:translate-y-0 max-md:translate-y-0",
@@ -536,14 +536,14 @@ function FeaturedFurnitureSection({ showAll = false, favoritesOnly = false }) {
                                             }, void 0, false, {
                                                 fileName: "[project]/components/featured-furniture-section.tsx",
                                                 lineNumber: 78,
-                                                columnNumber: 1242
+                                                columnNumber: 1276
                                             }, this),
                                             " Add to bag"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/featured-furniture-section.tsx",
                                         lineNumber: 78,
-                                        columnNumber: 906
+                                        columnNumber: 940
                                     }, this)
                                 ]
                             }, void 0, true, {
