@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/hicham/Downloads/Hicham/Freelance%20Projects/Furniture%20Ecom/components/lenis-provider.tsx"],"sourcesContent":["\"use client\";\n\nimport { useEffect, type ReactNode } from \"react\";\nimport Lenis from \"lenis\";\n\nexport function LenisProvider({ children }: { children: ReactNode }) {\n  useEffect(() => {\n    if (window.matchMedia(\"(prefers-reduced-motion: reduce)\").matches) return;\n    const lenis = new Lenis({ autoRaf: true, anchors: true, allowNestedScroll: true });\n    return () => lenis.destroy();\n  }, []);\n\n  return children;\n}\n"],"names":["LenisProvider","children","window","matchMedia","matches","lenis","autoRaf","anchors","allowNestedScroll","destroy"],"mappings":";;;;AAEA;AACA;AAHA;;;AAKO,SAASA,cAAc,EAAEC,QAAQ,EAA2B;IACjE,IAAA,kNAAS,EAAC;QACR,IAAIC,OAAOC,UAAU,CAAC,oCAAoCC,OAAO,EAAE;QACnE,MAAMC,QAAQ,IAAI,kJAAK,CAAC;YAAEC,SAAS;YAAMC,SAAS;YAAMC,mBAAmB;QAAK;QAChF,OAAO,IAAMH,MAAMI,OAAO;IAC5B,GAAG,EAAE;IAEL,OAAOR;AACT"}}]
+}

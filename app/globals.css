@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "lenis/dist/lenis.css";
+
+@theme {
+  --color-paper: #f8f7f4;
+  --color-ink: #24231f;
+  --color-muted: #88867f;
+  --color-line: #dedcd5;
+  --color-sand: #e7e4dc;
+  --color-butter: #e9d18b;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
