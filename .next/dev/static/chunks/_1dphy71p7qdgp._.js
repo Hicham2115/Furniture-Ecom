@@ -18,28 +18,16 @@ var _s = __turbopack_context__.k.signature();
 ;
 const categories = [
     {
-        name: "Living Room",
-        count: 174,
-        filter: "Tout voir",
-        image: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["rugImage"]
+        name: "Beds",
+        count: 5,
+        filter: "Lits",
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["bedImage"]
     },
     {
-        name: "Bedroom",
-        count: 361,
-        filter: "Matelas",
-        image: "photo-1631679706909-1844bbd07221"
-    },
-    {
-        name: "Sofas",
-        count: 117,
+        name: "Salons",
+        count: 4,
         filter: "Canapés",
-        image: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sofaImage"]
-    },
-    {
-        name: "Office",
-        count: 92,
-        filter: "Fauteuils",
-        image: "photo-1497366754035-f200968a6e72"
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["salonGraySetImage"]
     }
 ];
 function CategorySection() {
@@ -60,19 +48,19 @@ function CategorySection() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative h-[min(58vw,754px)] min-h-[440px] overflow-hidden bg-[#d6d5d3] [clip-path:polygon(0_0,85%_0,100%_18%,100%_100%,0_100%)] max-md:h-[min(95vw,560px)] max-md:min-h-0",
                 children: categories.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        className: `absolute inset-0 h-full w-full object-cover grayscale transition-[opacity,transform] duration-700 ease-out ${activeRoom === index ? "scale-100 opacity-100" : "scale-[1.035] opacity-0"}`,
+                        className: `absolute inset-0 h-full w-full object-cover transition-[opacity,transform] duration-700 ease-out ${activeRoom === index ? "scale-100 opacity-100" : "scale-[1.035] opacity-0"}`,
                         src: (0, __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["photo"])(item.image, 1500),
                         alt: `${item.name} interior`,
                         loading: "lazy",
                         "aria-hidden": activeRoom !== index
                     }, item.name, false, {
                         fileName: "[project]/components/category-section.tsx",
-                        lineNumber: 28,
+                        lineNumber: 26,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/category-section.tsx",
-                lineNumber: 26,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -83,7 +71,7 @@ function CategorySection() {
                         children: "Every piece carries rhythm beyond function—it’s motion and meaning where residential energy meets architectural purity."
                     }, void 0, false, {
                         fileName: "[project]/components/category-section.tsx",
-                        lineNumber: 40,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -96,13 +84,13 @@ function CategorySection() {
                                 children: "→"
                             }, void 0, false, {
                                 fileName: "[project]/components/category-section.tsx",
-                                lineNumber: 48,
+                                lineNumber: 46,
                                 columnNumber: 23
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/category-section.tsx",
-                        lineNumber: 44,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -124,7 +112,7 @@ function CategorySection() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/category-section.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -132,7 +120,7 @@ function CategorySection() {
                                         children: item.name.toUpperCase()
                                     }, void 0, false, {
                                         fileName: "[project]/components/category-section.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 63,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -144,18 +132,18 @@ function CategorySection() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/category-section.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 66,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, item.name, true, {
                                 fileName: "[project]/components/category-section.tsx",
-                                lineNumber: 53,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/category-section.tsx",
-                        lineNumber: 51,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -165,7 +153,7 @@ function CategorySection() {
                                 children: "[CATEGORIES]"
                             }, void 0, false, {
                                 fileName: "[project]/components/category-section.tsx",
-                                lineNumber: 75,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -173,25 +161,25 @@ function CategorySection() {
                                 children: "····················"
                             }, void 0, false, {
                                 fileName: "[project]/components/category-section.tsx",
-                                lineNumber: 75,
+                                lineNumber: 73,
                                 columnNumber: 36
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/category-section.tsx",
-                        lineNumber: 74,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/category-section.tsx",
-                lineNumber: 39,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/category-section.tsx",
-        lineNumber: 20,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
@@ -410,11 +398,6 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const imageShapes = [
-    "[clip-path:polygon(0_0,86%_0,100%_16%,100%_100%,0_100%)]",
-    "[clip-path:polygon(14%_0,100%_0,100%_100%,0_100%,0_16%)]",
-    "[clip-path:polygon(0_0,100%_0,100%_86%,87%_100%,0_100%)]"
-];
 function EditorialCollectionSection() {
     _s();
     const category = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$commerce$2d$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCommerceStore"])({
@@ -432,7 +415,14 @@ function EditorialCollectionSection() {
     const setDrawer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$commerce$2d$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCommerceStore"])({
         "EditorialCollectionSection.useCommerceStore[setDrawer]": (state)=>state.setDrawer
     }["EditorialCollectionSection.useCommerceStore[setDrawer]"]);
-    const selection = category === "Tout voir" ? __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["products"] : __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["products"].filter((product)=>product.category === category);
+    const sofas = __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["products"].filter((product)=>product.category === "Canapés");
+    const beds = __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["products"].filter((product)=>product.category === "Lits");
+    const selection = Array.from({
+        length: 4
+    }, (_, index)=>[
+            sofas[index],
+            beds[index]
+        ]).flat().filter((product)=>product !== undefined);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         "data-scroll-reveal": true,
         className: "bg-[#fbf9f8] px-[4.4%] pb-24 pt-[82px] max-md:px-[5%] max-md:pb-[70px] max-md:pt-[58px]",
@@ -448,7 +438,7 @@ function EditorialCollectionSection() {
                                 children: "MAISON · SIGNATURE COLLECTION"
                             }, void 0, false, {
                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                lineNumber: 27,
+                                lineNumber: 21,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -460,19 +450,19 @@ function EditorialCollectionSection() {
                                         children: "©26"
                                     }, void 0, false, {
                                         fileName: "[project]/components/editorial-collection-section.tsx",
-                                        lineNumber: 29,
+                                        lineNumber: 23,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                lineNumber: 28,
+                                lineNumber: 22,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/editorial-collection-section.tsx",
-                        lineNumber: 26,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -484,19 +474,19 @@ function EditorialCollectionSection() {
                                 size: 17
                             }, void 0, false, {
                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                lineNumber: 33,
+                                lineNumber: 27,
                                 columnNumber: 22
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/editorial-collection-section.tsx",
-                        lineNumber: 32,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/editorial-collection-section.tsx",
-                lineNumber: 25,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             selection.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -504,7 +494,7 @@ function EditorialCollectionSection() {
                 children: "No pieces in this collection yet."
             }, void 0, false, {
                 fileName: "[project]/components/editorial-collection-section.tsx",
-                lineNumber: 38,
+                lineNumber: 32,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 items-start gap-x-[3.3%] gap-y-10 md:grid-cols-4",
@@ -512,25 +502,25 @@ function EditorialCollectionSection() {
                         className: "group min-w-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `relative aspect-[.76] overflow-hidden bg-[#dedbd2] ${imageShapes[index % imageShapes.length]}`,
+                                className: "relative aspect-[4/3] overflow-hidden bg-[#dedbd2]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         className: "absolute inset-0 block",
                                         href: `/products/${product.id}`,
                                         "aria-label": `Discover ${product.name}`,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            className: "h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0",
+                                            className: "h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.035]",
                                             src: (0, __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["photo"])(product.image, 1200),
                                             alt: product.name,
                                             loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "[project]/components/editorial-collection-section.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 39,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/editorial-collection-section.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 38,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -543,12 +533,12 @@ function EditorialCollectionSection() {
                                             fill: favorites.includes(product.id) ? "currentColor" : "none"
                                         }, void 0, false, {
                                             fileName: "[project]/components/editorial-collection-section.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 42,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/editorial-collection-section.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 41,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -562,20 +552,20 @@ function EditorialCollectionSection() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                                lineNumber: 51,
+                                                lineNumber: 45,
                                                 columnNumber: 19
                                             }, this),
                                             " Add to bag"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/editorial-collection-section.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 44,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                lineNumber: 43,
+                                lineNumber: 37,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -588,7 +578,7 @@ function EditorialCollectionSection() {
                                                 children: product.category
                                             }, void 0, false, {
                                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 50,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -599,12 +589,12 @@ function EditorialCollectionSection() {
                                                     children: product.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/editorial-collection-section.tsx",
-                                                    lineNumber: 57,
+                                                    lineNumber: 51,
                                                     columnNumber: 88
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                                lineNumber: 57,
+                                                lineNumber: 51,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -612,13 +602,13 @@ function EditorialCollectionSection() {
                                                 children: product.detail
                                             }, void 0, false, {
                                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                                lineNumber: 58,
+                                                lineNumber: 52,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/editorial-collection-section.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 49,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -626,30 +616,30 @@ function EditorialCollectionSection() {
                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$furniture$2d$products$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["money"])(product.price)
                                     }, void 0, false, {
                                         fileName: "[project]/components/editorial-collection-section.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 54,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/editorial-collection-section.tsx",
-                                lineNumber: 54,
+                                lineNumber: 48,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, product.id, true, {
                         fileName: "[project]/components/editorial-collection-section.tsx",
-                        lineNumber: 42,
+                        lineNumber: 36,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/editorial-collection-section.tsx",
-                lineNumber: 40,
+                lineNumber: 34,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/editorial-collection-section.tsx",
-        lineNumber: 24,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }

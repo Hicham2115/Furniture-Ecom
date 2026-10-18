@@ -1,14 +1,12 @@
 "use client";
 
 import { useCommerceStore } from "@/lib/commerce-store";
-import { photo, rugImage, sofaImage } from "@/data/furniture-products";
+import { bedImage, photo, salonGraySetImage } from "@/data/furniture-products";
 import { useState } from "react";
 
 const categories = [
-  { name: "Living Room", count: 174, filter: "Tout voir", image: rugImage },
-  { name: "Bedroom", count: 361, filter: "Matelas", image: "photo-1631679706909-1844bbd07221" },
-  { name: "Sofas", count: 117, filter: "Canapés", image: sofaImage },
-  { name: "Office", count: 92, filter: "Fauteuils", image: "photo-1497366754035-f200968a6e72" },
+  { name: "Beds", count: 5, filter: "Lits", image: bedImage },
+  { name: "Salons", count: 4, filter: "Canapés", image: salonGraySetImage },
 ];
 
 export function CategorySection() {
@@ -27,7 +25,7 @@ export function CategorySection() {
         {categories.map((item, index) => (
           <img
             key={item.name}
-            className={`absolute inset-0 h-full w-full object-cover grayscale transition-[opacity,transform] duration-700 ease-out ${activeRoom === index ? "scale-100 opacity-100" : "scale-[1.035] opacity-0"}`}
+            className={`absolute inset-0 h-full w-full object-cover transition-[opacity,transform] duration-700 ease-out ${activeRoom === index ? "scale-100 opacity-100" : "scale-[1.035] opacity-0"}`}
             src={photo(item.image, 1500)}
             alt={`${item.name} interior`}
             loading="lazy"

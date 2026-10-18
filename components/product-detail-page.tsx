@@ -3,16 +3,10 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Heart, Minus, Plus, ShieldCheck, Truck } from "lucide-react";
 import type { Product } from "@/data/furniture-products";
-import { money, photo, products } from "@/data/furniture-products";
+import { bedImage, blueHeadboardImage, bedroomLampImage, money, photo, products, upholsteredBedImage, whiteBedLinenImage } from "@/data/furniture-products";
 import { useCommerceStore } from "@/lib/commerce-store";
 import { Header } from "@/layout/header";
 import { Footer } from "@/components/footer";
-
-const extraImages = [
-  "photo-1600210492486-724fe5c67fb0",
-  "photo-1600607687939-ce8a6c25118c",
-  "photo-1616486338812-3dadae4b4ace",
-];
 
 export function ProductDetailPage({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
@@ -21,7 +15,9 @@ export function ProductDetailPage({ product }: { product: Product }) {
   const toggleFavorite = useCommerceStore((state) => state.toggleFavorite);
   const changeCart = useCommerceStore((state) => state.changeCart);
   const setDrawer = useCommerceStore((state) => state.setDrawer);
-  const gallery = [product.image, ...extraImages];
+  const gallery = product.category === "Lits"
+    ? [...new Set([product.image, bedImage, upholsteredBedImage, bedroomLampImage, blueHeadboardImage, whiteBedLinenImage])]
+    : [product.image, "photo-1600210492486-724fe5c67fb0", "photo-1600607687939-ce8a6c25118c", "photo-1616486338812-3dadae4b4ace"];
   const related = products.filter((item) => item.id !== product.id);
 
   function addToBag() {
@@ -55,7 +51,7 @@ export function ProductDetailPage({ product }: { product: Product }) {
                 </button>
               ))}
             </div>
-            <div className="relative aspect-[.82] overflow-hidden bg-[#e8e5df] max-sm:aspect-[.9]">
+            <div className="relative aspect-[4/3] overflow-hidden bg-[#e8e5df]">
               <img className="h-full w-full object-cover transition-opacity duration-300" src={photo(gallery[activeImage], 1400)} alt={product.name} />
               <span className="absolute left-5 top-5 bg-[#fbf9f8] px-3 py-2 text-[8px] font-medium uppercase tracking-[.13em]">MAISON signature</span>
               <span className="absolute bottom-5 right-5 text-[10px] tracking-[.12em] text-white drop-shadow">0{activeImage + 1} / 0{gallery.length}</span>
@@ -64,7 +60,7 @@ export function ProductDetailPage({ product }: { product: Product }) {
 
           <div className="sticky top-8 self-start pt-6 max-md:static max-md:pt-0">
             <p className="mb-4 mt-0 text-[9px] font-semibold uppercase tracking-[.18em] text-[#8a7854]">
-              {product.category === "Canapés" || product.category === "Tapis" ? "Living room" : product.category === "Matelas" ? "Bedroom" : "Lounge"} <span className="px-2 text-[#aaa69a]">/</span> Made for living
+              {product.category === "Canapés" || product.category === "Tapis" ? "Living room" : product.category === "Matelas" || product.category === "Lits" ? "Bedroom" : "Lounge"} <span className="px-2 text-[#aaa69a]">/</span> Made for living
             </p>
             <h1 className="mb-4 mt-0 text-[clamp(45px,5.7vw,76px)] font-medium leading-[.92] tracking-[-.075em] max-md:text-[clamp(43px,11vw,64px)]">
               {product.name}
@@ -116,7 +112,7 @@ export function ProductDetailPage({ product }: { product: Product }) {
               <a className="group relative overflow-hidden border border-[#d5d1c9] bg-[#fbf9f8] transition-[border-color,transform,box-shadow] duration-500 hover:-translate-y-1 hover:border-[#a99a75] hover:shadow-[0_18px_40px_rgba(36,35,31,.09)]" href={`/products/${item.id}`} key={item.id}>
                 <div className="relative aspect-[1.35] overflow-hidden bg-[#d8d5ce]">
                   <img className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.045]" src={photo(item.image, 900)} alt={item.name} />
-                  <span className="absolute left-4 top-4 bg-[#fbf9f8]/95 px-3 py-2 text-[8px] font-medium uppercase tracking-[.14em] text-[#55524f]">{item.category === "Canapés" || item.category === "Tapis" ? "Living room" : item.category === "Matelas" ? "Bedroom" : "Lounge"}</span>
+                  <span className="absolute left-4 top-4 bg-[#fbf9f8]/95 px-3 py-2 text-[8px] font-medium uppercase tracking-[.14em] text-[#55524f]">{item.category === "Canapés" || item.category === "Tapis" ? "Living room" : item.category === "Matelas" || item.category === "Lits" ? "Bedroom" : "Lounge"}</span>
                   <span className="absolute bottom-4 right-4 grid h-10 w-10 translate-y-2 place-items-center rounded-full bg-[#fbf9f8] opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"><ArrowRight size={16} /></span>
                 </div>
                 <div className="flex items-end justify-between gap-4 px-5 py-5 max-sm:px-4 max-sm:py-4">

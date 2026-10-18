@@ -4,21 +4,15 @@ import { ArrowUpRight, Heart, Plus } from "lucide-react";
 import { products, photo, money } from "@/data/furniture-products";
 import { useCommerceStore } from "@/lib/commerce-store";
 
-const imageShapes = [
-  "[clip-path:polygon(0_0,86%_0,100%_16%,100%_100%,0_100%)]",
-  "[clip-path:polygon(14%_0,100%_0,100%_100%,0_100%,0_16%)]",
-  "[clip-path:polygon(0_0,100%_0,100%_86%,87%_100%,0_100%)]",
-];
-
 export function EditorialCollectionSection() {
   const category = useCommerceStore((state) => state.category);
   const favorites = useCommerceStore((state) => state.favorites);
   const changeCart = useCommerceStore((state) => state.changeCart);
   const toggleFavorite = useCommerceStore((state) => state.toggleFavorite);
   const setDrawer = useCommerceStore((state) => state.setDrawer);
-  const selection = category === "Tout voir"
-    ? products
-    : products.filter((product) => product.category === category);
+  const sofas = products.filter((product) => product.category === "Canapés");
+  const beds = products.filter((product) => product.category === "Lits");
+  const selection = Array.from({ length: 4 }, (_, index) => [sofas[index], beds[index]]).flat().filter((product) => product !== undefined);
 
   return (
     <section data-scroll-reveal className="bg-[#fbf9f8] px-[4.4%] pb-24 pt-[82px] max-md:px-[5%] max-md:pb-[70px] max-md:pt-[58px]" id="selection">
@@ -40,9 +34,9 @@ export function EditorialCollectionSection() {
         <div className="grid grid-cols-1 items-start gap-x-[3.3%] gap-y-10 md:grid-cols-4">
           {selection.map((product, index) => (
             <article className="group min-w-0" key={product.id}>
-              <div className={`relative aspect-[.76] overflow-hidden bg-[#dedbd2] ${imageShapes[index % imageShapes.length]}`}>
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#dedbd2]">
                 <a className="absolute inset-0 block" href={`/products/${product.id}`} aria-label={`Discover ${product.name}`}>
-                  <img className="h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0" src={photo(product.image, 1200)} alt={product.name} loading="lazy" />
+                  <img className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.035]" src={photo(product.image, 1200)} alt={product.name} loading="lazy" />
                 </a>
                 <button onClick={() => toggleFavorite(product.id)} className={`absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-paper/90 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100 focus-visible:opacity-100 max-md:opacity-100 ${favorites.includes(product.id) ? "text-[#9c5545]" : "text-ink"}`} aria-label={favorites.includes(product.id) ? "Remove from wishlist" : "Add to wishlist"}>
                   <Heart size={18} strokeWidth={1.5} fill={favorites.includes(product.id) ? "currentColor" : "none"} />
